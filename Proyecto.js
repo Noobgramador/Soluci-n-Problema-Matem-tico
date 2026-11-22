@@ -100,7 +100,7 @@ function mostrarResultados(datos) {
  */
 function iniciarPrograma() {
     console.log('--- Calculadora de Figura Compuesta (Node.js) ---');
-    rl.question('Ingresa el área total en cm² (ej. 450): ', (respuesta) => {
+    rl.question('Ingresa el área total en cm²:', (respuesta) => {
         const areaObjetivo = parseFloat(respuesta.trim().replace(',', '.'));
 
         if (Number.isNaN(areaObjetivo) || areaObjetivo <= 0) {
